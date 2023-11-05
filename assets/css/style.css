@@ -224,7 +224,13 @@ h6{
         background:none;
         color:var(--bg-red);
     }
+    .hero-image-section{
+        padding:20px;
+    }
     .hero-image{
         grid-template-columns: auto;
+    }
+    .hero-image-shadow{
+        bottom: 4px;
     }
 }
