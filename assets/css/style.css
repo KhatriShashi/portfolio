@@ -222,7 +222,7 @@ h6{
     }
     .navbar .menu ul li a.active{
         background:none;
-        color: red;
+        color:var(--bg-red);
     }
     .hero-image{
         grid-template-columns: auto;
