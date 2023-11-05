@@ -227,4 +227,7 @@ h6{
     .hero-image{
         grid-template-columns: auto;
     }
+    .hero-image-left-content h3{
+        font-size: 25px;
+    }
 }
