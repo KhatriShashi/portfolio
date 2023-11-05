@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Jacques+Francois&family=Quicksand:wght@300;400;500;700&display=swap');
+
+:root{
+    --main-font:'Quicksand', sans-serif;
+    --base-font:'Jacques Francois', serif;
+    --site-font:'Caveat', cursive;
+    --bg-color-first:#faf6f0;
+    --bg-color-second:#e9d8c2;
+    --bg-red:#fd9298
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-first);
+    font-family: var(--main-font);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 47px;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 25px;
+}
+h6{
+    font-size: 20px;
+}
+.home-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/bg-2.png");
+    padding-top: 100px;
+}
+.menu-icon{
+    display: none;
+}
+.navbar-section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    transition: all 0.4s ease;
+}
+.navbar .menu ul{
+    display: flex;
+}
+.navbar .menu ul li{
+    margin-left: 20px;
+}
+.navbar .menu ul li a{
+    color: white;
+    padding: 10px 25px;
+    background-color: #000;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition:all 0.5s ease;
+}
+.navbar .menu ul li a.active,nav .menu ul li a:hover{
+    background-color:white;
+    color:var(--bg-red)
+}
+.navbar .menu ul li a:hover{
+    letter-spacing: 1px;
+}
+
+
+/* Hero Image */
+.hero-image-section{
+    height:calc(100vh - 100px);
+    position:relative;
+    padding:20px 30px 20px 30px;
+}
+.hero-image{
+    border: 2px solid black;
+    height: 100%;
+    border-radius: 20px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    background-color: var(--bg-color-first);
+}
+.hero-image-shadow{
+    position: absolute;
+    border: 2px solid black;
+    height: calc(100% - 40px);
+    width: calc(100% - 60px);
+    border-radius: 20px;
+    bottom: -5px;
+    right: 10px;
+    z-index: -1;
+}
+.hero-image-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.hero-image-left-content{
+    padding: 40px;
+}
+.hero-image-left-content h5{
+    font-family: var(--site-font);
+}
+.hero-image-left-content h3{
+    font-family: var(--base-font);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.hero-image-left-content .download-cv{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+}
+.hero-image-left-content .download-cv a{
+    font-family: var(--site-font);
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.hero-image-left-content .download-cv img{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.hero-image-right{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-image: url(../images/bg-1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image-right img{
+    width: 100%;
+}
+
+/* media query */
+@media (max-width: 991.98px) {
+    .navbar{
+        flex-direction: column;
+        padding:0;
+    }
+    .navbar .nav-image{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content:space-between;
+        padding: 20px 0;
+    }
+    .navbar .nav-image h1{
+        margin-left: 20px;
+    }
+    .navbar .menu-icon{
+        display: block;
+    }
+    .navbar .menu-icon i{
+        font-size: 32px;
+        margin-right: 10px;
+        font-weight: 700;
+    }
+    .navbar .menu{
+        max-height:0;
+        width: 100%;
+        background-color:rgb(30, 27, 27);
+        overflow: hidden;
+        transition: all 0.6s ease;
+    }
+    .navbar .menu-open{
+        max-height: 400px;
+    }
+    .navbar .menu ul{
+        flex-direction: column;
+    }
+    .navbar .menu ul li{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid rgb(129, 128, 128);
+        margin-left: 0;
+    }
+    .navbar .menu ul li:last-child{
+        border: none;
+    }
+    .navbar .menu ul li a{
+        background: none;
+        font-size: 20px;
+    }
+    .navbar .menu ul li a.active{
+        background:none;
+        color: red;
+    }
+    .hero-image{
+        grid-template-columns: auto;
+    }
+}
