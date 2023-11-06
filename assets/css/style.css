@@ -135,22 +135,22 @@ h6{
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.hero-image-left-content .download-cv{
-    margin-top: 30px;
+.download-cv{
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 200px;
 }
-.hero-image-left-content .download-cv a{
+.download-cv a{
     font-family: var(--site-font);
     font-size: 22px;
     position: absolute;
     top: 5px;
     z-index: 1;
 }
-.hero-image-left-content .download-cv img{
+.download-cv img{
     width: 160px;
     height: auto;
     position: absolute;
@@ -169,7 +169,83 @@ h6{
 .hero-image-right img{
     width: 100%;
 }
-
+/* About Us */
+.about-us{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px;
+}
+.about-us-left{
+    background:var(--bg-color-first);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-left-avtar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about-us-left-avtar img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.about-us-left h4{
+    font-family: var(--base-font);
+    margin-top: 15px;
+}
+.about-us-left h6{
+    font-family: var(--base-font);
+    margin-top: 5px;
+}
+.about-us-left-email{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: black;
+    margin-top: 10px;
+}
+.about-us-left-email a{
+    color: white;
+}
+.about-us-social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.about-us-social-media i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.about-us-right{
+    background-image: url(../images/about-us-bg.jpg);
+    background-position:center;
+    object-fit: cover;
+    background-size:750px;
+    background-repeat: no-repeat;
+    /* background-color:#e3e3e8; */
+    background-color: var(--bg-color-first);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 120% 120%;
+}
+.about-us-right-content{
+    width: 70%;
+    height: 70%;
+    color: black;
+}
+.about-us-right-content h4{
+    font-family: var(--site-font);
+    margin-top: 20px;
+}
+.about-us-right-content p{
+    margin-top: 20px;
+    line-height: 24px;
+}
 /* media query */
 @media (max-width: 991.98px) {
     .navbar{
@@ -233,4 +309,11 @@ h6{
     .hero-image-shadow{
         bottom: 4px;
     }
+
+    /* About Us */
+    .about-us{
+        grid-template-columns:auto;
+        grid-template-rows:repeat(2,450px);
+    }
+   
 }

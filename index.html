@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- remix icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>PORTFOLIO</title>
-</head>
-<body>
-    <section class="home-section">
-        <div class="navbar-section">
-            <div class="navbar">
-                <div class="nav-image">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- remix icon -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <section class="home-section">
+            <div class="navbar-section">
+                <div class="navbar">
+                    <div class="nav-image">
                         <h1>Portfolio</h1>
-                    <div class="menu-icon" id="hamburger-menu">
-                        <i class="ri-menu-3-line"></i>
+                        <div class="menu-icon" id="hamburger-menu">
+                            <i class="ri-menu-3-line"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+
             </div>
-    
-        </div>
-        <!-- Hero Image -->
-        <div class="hero-image-section">
-            <div class="hero-image">
-              <div class="hero-image-left">
-                <div class="hero-image-left-content">
-                    <h5>Crafting the User Experience</h5>
-                    <h3>The Art of Front-End Development <br> in the Digital Universe</h3>
-                    <p>Front-end developers craft user-friendly, visually appealing digital interfaces, enhancing the overall digital experience.</p>
-                    <div class="download-cv">
-                        <a href="./assets/resume.pdf" target="_blank">Get Resume</a>
-                        <img src="./assets/images/button-bg.png" alt="button-image">
+            <!-- Hero Image -->
+            <div class="hero-image-section">
+                <div class="hero-image">
+                    <div class="hero-image-left">
+                        <div class="hero-image-left-content">
+                            <h5>Crafting the User Experience</h5>
+                            <h3>The Art of Front-End Development <br> in the
+                                Digital Universe</h3>
+                            <p>Front-end developers craft user-friendly,
+                                visually appealing digital interfaces, enhancing
+                                the overall digital experience.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-right">
+                        <img src="./assets/images/avtar.png" alt="avtar">
                     </div>
                 </div>
-              </div>
-              <div class="hero-image-right">
-                <img src="./assets/images/avtar.png" alt="avtar">
-              </div>
+                <div class="hero-image-shadow"></div>
             </div>
-            <div class="hero-image-shadow"></div>
-        </div>
-    </section>
-    
-    <script src="./assets/js/index.js"></script>
-</body>
+        </section>
+
+        <!-- About Me -->
+        <section id="about">
+            <div class="about-us">
+                <div class="about-us-left">
+                    <div class="about-us-left-avtar">
+                        <img src="./assets/images/avtar-2.jpg" alt="avtar">
+                    </div>
+                    <h4>Shashi Kumar Khatri</h4>
+                    <h6>Font-End Developer</h6>
+                    <div class="about-us-left-email">
+                        <a href="mailto:shashi107.hitcse2020@gmail.com" target="_blank">Email Me</a>
+                    </div>
+                    <div class="about-us-social-media">
+                            <a href="whatsapp://send?abid=9546454878&text=Hello!" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+                            <a href="https://www.linkedin.com/in/shashi-khatri-7a0381214/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+                <div class="about-us-right">
+                    <div class="about-us-right-content">
+                        <h4>About Me</h4>
+                        <p>I'm a passionate front-end developer with expertise in HTML, CSS, JavaScript, and React. I specialize in crafting visually engaging, user-centric web experiences. My keen design sense and commitment to staying updated with industry trends allow me to create flawless, innovative projects that captivate and engage users.</p>
+                        <div class="download-cv">
+                            <a href="./assets/resume.pdf" target="_blank">Get
+                                Resume</a>
+                            <img src="./assets/images/button-bg.png"
+                                alt="button-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./assets/js/index.js"></script>
+    </body>
 </html>
