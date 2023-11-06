@@ -135,28 +135,7 @@ h6{
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.download-cv{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 200px;
-}
-.download-cv a{
-    font-family: var(--site-font);
-    font-size: 22px;
-    position: absolute;
-    top: 5px;
-    z-index: 1;
-}
-.download-cv img{
-    width: 160px;
-    height: auto;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
+
 .hero-image-right{
     height: 100%;
     width: 100%;
@@ -220,6 +199,28 @@ h6{
     font-size: 30px;
     margin-right: 10px;
 }
+.download-cv{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+}
+.download-cv a{
+    font-family: var(--site-font);
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.download-cv img{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
 .about-us-right{
     background-image: url(../images/about-us-bg.jpg);
     background-position:center;
@@ -240,12 +241,13 @@ h6{
 }
 .about-us-right-content h4{
     font-family: var(--site-font);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .about-us-right-content p{
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 24px;
 }
+
 /* media query */
 @media (max-width: 991.98px) {
     .navbar{
