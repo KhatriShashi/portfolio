@@ -477,7 +477,7 @@ h6{
     justify-content: center;
 }
 #contact .contact-right-form{
-    width: 80%;
+    width: 90%;
 }
 
 #contact .contact-right-form input,
@@ -491,6 +491,7 @@ h6{
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 15px;
+  box-sizing: border-box;
 }
 #contact .contact-right-form input:focus,
 #contact .contact-right-form textarea:focus
