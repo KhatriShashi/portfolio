@@ -468,6 +468,9 @@ h6{
 
 }
 @media (max-width: 575.98px) { 
+    #projects .items{
+        padding: 0 10px;
+    }
     #projects .item .project-img-desktop-view{
         display: none;
     }
