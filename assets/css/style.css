@@ -607,6 +607,9 @@ h6{
 
 }
 @media (max-width: 575.98px) { 
+    .about-us-right-content h4{
+        margin-top: 0;
+    }
     #skills{
         padding: 0;
     }
