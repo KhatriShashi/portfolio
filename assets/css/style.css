@@ -615,6 +615,9 @@ h6{
     #projects .item .img{
         height: 700px;
     }
+    #contact{
+        padding: 10px;
+    }
     #contact .container{
         flex-direction: column;
     }
