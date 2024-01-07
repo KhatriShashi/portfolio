@@ -607,8 +607,12 @@ h6{
 
 }
 @media (max-width: 575.98px) { 
+    
     #projects .items{
         padding: 0 10px;
+    }
+    #projects .item{
+        margin-bottom: 2rem;
     }
     #projects .item .project-img-desktop-view{
         display: none;
@@ -636,4 +640,5 @@ h6{
         align-items: center;
         justify-content: center;
     }
+
 }
