@@ -3,6 +3,7 @@ document.querySelector(".menu-icon").addEventListener('click', () => {
     menu.classList.toggle("menu-open");
 })
 
+
 window.addEventListener("scroll", (e) => {
 
     if (window.scrollY < 5) {
@@ -11,7 +12,6 @@ window.addEventListener("scroll", (e) => {
         document.querySelector(".navbar-section").style.background = "#faf6f0";
     }
 })
-
 
 
 let section = document.querySelectorAll('section')
