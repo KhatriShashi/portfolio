@@ -1,0 +1,10 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { site } from '../data/site';
+---
+<SiteLayout title="AI Lab" description="Shashi's learning and product experiments with AI agents." active="ai">
+  <section class="page-intro wrap"><p class="eyebrow">04 / LEARNING IN PROGRESS</p><div class="page-intro-row"><h1>AI agents.<br />Useful <em>products.</em></h1><p>{site.learning}</p></div></section>
+  <section class="ai-intro wrap"><div><span class="status-pill"><i></i> IN PROGRESS</span><h2>Learn by<br />building.</h2></div><div><p>I’m exploring how AI agents can help turn product ideas into useful experiences. My backend experience gives me a foundation for thinking about APIs, data, integrations, and reliability as part of those products.</p><p>This page is a home for that learning. I’ll add specific experiments here as they develop, with the problem, what I built, and what I learned.</p><a class="text-link" href={`mailto:${site.email}`}>TALK ABOUT AI PRODUCTS <span>↗</span></a></div></section>
+  <section class="ai-focus wrap"><div class="section-heading"><p class="eyebrow">CURRENT AREAS OF INTEREST</p><span class="mono">LEARNING THROUGH PRACTICE</span></div><div class="ai-focus-row"><span>01</span><h3>Agent-based products</h3><p>Building product ideas with AI agents and exploring where agent workflows can be useful.</p><span class="mono">EXPLORING</span></div><div class="ai-focus-row"><span>02</span><h3>Backend foundations for AI</h3><p>Learning how APIs, integrations, and data workflows support products with AI capabilities.</p><span class="mono">LEARNING</span></div><div class="ai-focus-row"><span>03</span><h3>Experiments & notes</h3><p>Documenting working prototypes and lessons as there are concrete details to share.</p><span class="mono">UP NEXT</span></div></section>
+  <section class="ai-note"><div class="wrap"><span class="mono">A WORKING SPACE, NOT A CLAIMS PAGE</span><p>Specific project write-ups will be added as the experiments take shape.</p></div></section>
+</SiteLayout>

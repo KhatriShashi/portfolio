@@ -1,0 +1,10 @@
+---
+import type { Project } from '../data/projects';
+const { project, hero = false } = Astro.props as { project: Project; hero?: boolean };
+---
+<div class={`${hero ? 'case-hero-art' : 'project-art'} art-${project.cover}`} aria-hidden="true">
+  {project.cover === 'byss' && <div class="art-ui byss-ui"><div class="art-ui-head"><span class="art-ui-mark">BYSS</span><span>SERVICE ELIGIBILITY</span></div><div class="byss-flow"><div><small>LOCATION</small><strong>ZIP coverage</strong></div><i>→</i><div><small>ROUTING</small><strong>Nearby warehouse</strong></div><i>→</i><div><small>RESULT</small><strong>Service area</strong></div></div><div class="byss-map"><span></span><span></span><span></span><i></i></div></div>}
+  {project.cover === 'viia' && <div class="art-ui viia-ui"><div class="art-ui-head"><span class="art-ui-mark">VIIA HEMP</span><span>CHECKOUT OFFER</span></div><div class="viia-promo"><span class="promo-label">A LITTLE EXTRA</span><strong>Choose your<br /><em>free item.</em></strong><div class="gift-options"><i>01</i><i>02</i><i>03</i></div><span class="promo-foot">CUSTOM DISCOUNT · APPLIED AT CHECKOUT</span></div></div>}
+  {project.cover === 'chef' && <div class="art-ui chef-ui"><div class="art-ui-head"><span class="art-ui-mark">I’M CHEF TOO</span><span>SUBSCRIPTION OFFER</span></div><div class="chef-card"><span class="chef-card-kicker">MEMBER BENEFIT</span><strong>For active<br />subscribers.</strong><div class="subscriber-rule"><span>ACTIVE SUBSCRIPTION</span><b>3 MONTHS</b></div><div class="chef-card-footer"><span>RECHARGE × SHOPIFY</span><span>OFFER READY ↗</span></div></div></div>}
+  {!hero && <span class="project-art-index">{project.number} / SELECTED WORK</span>}
+</div>

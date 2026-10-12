@@ -1,0 +1,10 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { projects } from '../../data/projects';
+---
+<SiteLayout title="Selected work" active="work">
+  <section class="page-intro wrap"><p class="eyebrow">01 / SELECTED ENGINEERING WORK</p><div class="page-intro-row"><h1>Systems built<br />for <em>real work.</em></h1><p>Backend-focused projects across e-commerce, ERP integrations, and warehouse operations. Open a case study to explore the systems, workflows, and implementation details.</p></div></section>
+  <section class="work-list wrap"><div class="work-list-top"><span>NO.</span><span>PROJECT</span><span>AREA</span><span>DETAIL</span></div>{projects.map((project) => <a class="work-list-row" href={`/work/${project.slug}/`}><span class="work-list-num">{project.number}</span><strong>{project.title}</strong><span>{project.category}</span><span>CASE STUDY</span><span class="work-list-arrow">↗</span></a>)}</section>
+  <section class="work-grid-section wrap"><div class="section-heading"><p class="eyebrow">A CLOSER LOOK</p><span class="mono">{projects.length} CASE STUDIES</span></div><div class="project-grid">{projects.map((project) => <ProjectCard project={project} />)}</div></section>
+</SiteLayout>

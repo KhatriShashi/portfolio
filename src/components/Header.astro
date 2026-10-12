@@ -1,0 +1,20 @@
+---
+import { site } from '../data/site';
+const { active = '' } = Astro.props;
+const links = [
+  { label: 'Work', href: '/work/', key: 'work' },
+  { label: 'AI Lab', href: '/ai/', key: 'ai' },
+  { label: 'About', href: '/about/', key: 'about' },
+  { label: 'Résumé', href: '/resume/', key: 'resume' },
+  { label: 'Contact', href: '/contact/', key: 'contact' },
+];
+---
+<header class="site-header wrap">
+  <a class="brand" href="/" aria-label={`${site.name}, home`}>{site.shortName}<span>—</span></a>
+  <span class="header-role">{site.role}</span>
+  <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+  <nav id="site-menu" class="site-nav" data-menu aria-label="Main navigation">
+    {links.map((link) => <a href={link.href} aria-current={active === link.key ? 'page' : undefined}>{link.label}</a>)}
+    <a class="nav-arrow" href={`mailto:${site.email}`} aria-label={`Email ${site.name}`}>↗</a>
+  </nav>
+</header>

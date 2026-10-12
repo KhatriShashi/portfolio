@@ -1,0 +1,7 @@
+---
+import { site } from '../data/site';
+---
+<footer class="site-footer wrap">
+  <div class="footer-top"><p class="footer-cta">Have a good<br />one in mind<span>?</span></p><a class="footer-email" href={`mailto:${site.email}`}>{site.email}<span>↗</span></a></div>
+  <div class="footer-bottom"><span>© {new Date().getFullYear()} {site.name}</span><span>{site.location}</span><div>{site.social.map((item) => <a href={item.href} target="_blank" rel="noreferrer">{item.label} ↗</a>)}</div><a href="#main">BACK TO TOP ↑</a></div>
+</footer>

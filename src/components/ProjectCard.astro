@@ -1,0 +1,10 @@
+---
+import type { Project } from '../data/projects';
+import ProjectArtwork from './ProjectArtwork.astro';
+const { project } = Astro.props as { project: Project };
+---
+<a class="project-card" href={`/work/${project.slug}/`}>
+  <ProjectArtwork project={project} />
+  <div class="project-card-meta"><div><span class="mono">{project.category}</span><h3>{project.title}</h3></div><span class="project-arrow">↗</span></div>
+  <p class="project-card-summary">{project.summary}</p>
+</a>

@@ -1,0 +1,7 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { site } from '../data/site';
+---
+<SiteLayout title="Contact" description="Get in touch with Shashi about backend development and AI product work." active="contact">
+  <section class="contact-page wrap"><p class="eyebrow"><span class="status-dot"></span>BACKEND DEVELOPMENT · AI PRODUCT BUILDING</p><div class="contact-grid"><div><h1>Let’s build<br />something<br /><em>useful.</em></h1><p class="contact-intro">I’m interested in backend engineering, system integrations, and products exploring the possibilities of AI agents.</p></div><div class="contact-details"><span class="mono">EMAIL</span><a class="contact-email" href={`mailto:${site.email}`}>{site.email}<span>↗</span></a><span class="mono phone-label">PHONE</span><a class="contact-phone" href="tel:+919546454878">{site.phone}<span>↗</span></a><div class="contact-social"><span class="mono">PROFILES</span>{site.social.map((item) => <a href={item.href} target="_blank" rel="noreferrer">{item.label}<span>↗</span></a>)}</div><div class="contact-note"><span class="mono">A QUICK NOTE</span><p>Share what you’re building, the problem you’re solving, and how I might help. I’m glad to hear from you.</p></div></div></div><div class="contact-bottom"><span>{site.location}</span><span>INDIA · IST (UTC+05:30)</span></div></section>
+</SiteLayout>

@@ -1,0 +1,43 @@
+export const site = {
+  name: 'Shashi Kumar Khatri',
+  shortName: 'SK',
+  role: 'Backend Developer · AI Product Builder',
+  location: 'Surat, Gujarat, India',
+  email: 'shashikrkhatri9546@email.com',
+  phone: '+91 9546454878',
+  intro: 'Building systems that move business forward.',
+  bio: 'I’m a backend-focused developer with 2+ years of experience building e-commerce, ERP, and CRM systems. I design APIs, integrations, data pipelines, and asynchronous workflows—and I’m learning AI while building products with AI agents.',
+  summary: 'Backend-focused software developer with 2+ years of experience delivering scalable e-commerce, ERP, and CRM solutions. Experienced in Node.js, TypeScript, SQL, Shopify, NetSuite integrations, API design, asynchronous processing, data synchronization, and operational automation.',
+  linkedin: 'https://www.linkedin.com/in/shashi-khatri-7a0381214/',
+  github: 'https://github.com/KhatriShashi',
+  social: [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/shashi-khatri-7a0381214/' },
+    { label: 'GitHub', href: 'https://github.com/KhatriShashi' },
+  ],
+  experience: [
+    {
+      dates: 'MAR 2024 — PRESENT',
+      title: 'Full Stack Developer',
+      organization: 'Praella Private Limited',
+      location: 'Surat, Gujarat',
+      description: 'Build e-commerce, ERP, and CRM solutions with a focus on backend services, API design, integrations, data synchronization, and asynchronous workflows.',
+    },
+  ],
+  education: {
+    dates: 'MAR 2020 — MAR 2024',
+    title: 'Bachelor of Technology, Computer Science & Engineering',
+    organization: 'Haldia Institute of Technology',
+    location: 'West Bengal, India',
+    coursework: 'Data Structures & Algorithms, Database Management Systems, Operating Systems, Object-Oriented Design',
+  },
+  skills: [
+    { group: 'Backend & APIs', items: 'Node.js, Express.js, REST APIs, GraphQL, Webhooks, Microservices, API Design' },
+    { group: 'Languages', items: 'JavaScript (ES6+), TypeScript, Python, SQL' },
+    { group: 'Data & Queues', items: 'MySQL, PostgreSQL, Prisma ORM, Redis, BullMQ, Asynchronous Processing' },
+    { group: 'Integrations', items: 'Shopify, NetSuite, ShipStation, Mapbox, Recharge, System Integrations' },
+    { group: 'Commerce & Operations', items: 'Order Management, Inventory, Warehouse, Fulfillment, CRM Workflows, Data Migration' },
+    { group: 'Frontend & 3D', items: 'React.js, Remix, Three.js, HTML5, CSS3, Product Configurators' },
+    { group: 'Tools & Practices', items: 'Git, GitHub, CI/CD, Postman, System Design, Agile/Scrum, Error Handling' },
+  ],
+  learning: 'Currently learning applied AI and building products with AI agents. This section will grow as I have experiments and products ready to share.',
+};

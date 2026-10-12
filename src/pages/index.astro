@@ -1,0 +1,22 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+import { site } from '../data/site';
+---
+<SiteLayout title="Home" active="">
+  <section class="home-hero wrap">
+    <p class="eyebrow"><span class="status-dot"></span>{site.role} <span class="eyebrow-sep">/</span> {site.location}</p>
+    <div class="hero-grid"><h1>{site.intro.split(' ').slice(0, 2).join(' ')}<br />{site.intro.split(' ').slice(2, 3).join(' ')} <em>{site.intro.split(' ').slice(3).join(' ')}</em></h1><div class="hero-aside"><span class="mono">BACKEND ENGINEERING<br />E-COMMERCE · INTEGRATIONS · AI</span><p>{site.bio}</p><a class="text-link" href="/about/">A LITTLE ABOUT ME <span>↗</span></a></div></div>
+    <div class="hero-foot"><span>SCROLL TO EXPLORE</span><span class="scroll-mark">↓</span><span>BACKEND · SYSTEMS · AI PRODUCTS</span></div>
+  </section>
+
+  <section class="work-preview wrap" id="work">
+    <div class="section-heading"><p class="eyebrow">01 / SELECTED ENGINEERING WORK</p><a class="text-link" href="/work/">ALL PROJECTS <span>↗</span></a></div>
+    <div class="project-grid">{projects.map((project) => <ProjectCard project={project} />)}</div>
+  </section>
+
+  <section class="statement-band"><div class="wrap statement-inner"><span class="mono">A NOTE ON THE WORK</span><p>Reliable systems.<br />Thoughtful products.<br /><em>Useful outcomes.</em></p><a class="text-link" href="/about/">HOW I WORK <span>↗</span></a></div></section>
+
+  <section class="home-bottom wrap"><div><p class="eyebrow">02 / LEARNING IN PUBLIC</p><h2>Backend craft.<br />AI curiosity.</h2></div><div class="home-bottom-copy"><p>I’m learning applied AI and building products with AI agents. I’m interested in how new capabilities can become dependable, useful tools.</p><a class="text-link" href="/ai/">EXPLORE THE AI LAB <span>↗</span></a></div></section>
+</SiteLayout>
