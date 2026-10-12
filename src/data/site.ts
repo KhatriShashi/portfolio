@@ -16,11 +16,22 @@ export const site = {
   ],
   experience: [
     {
-      dates: 'MAR 2024 — PRESENT',
+      dates: 'OCT 2026 — PRESENT',
+      title: 'Full Stack Developer',
+      organization: 'PlanetX',
+      website: 'https://planetxhq.com/',
+      location: 'India',
+      description: 'Collaborate with the PlanetX team to build an AI-powered product, contributing across the application experience and the backend services that support it.',
+      highlights: ['Collaborate with product, design, and engineering teammates to shape requirements into product features.', 'Contribute across the stack, building application experiences and the backend services that support an AI-powered product.', 'Work with the team to iterate on product capabilities and turn feedback into improvements.'],
+    },
+    {
+      dates: 'MAR 2024 — SEP 2026',
       title: 'Full Stack Developer',
       organization: 'Praella Private Limited',
+      website: 'https://praella.com/',
       location: 'Surat, Gujarat',
-      description: 'Build e-commerce, ERP, and CRM solutions with a focus on backend services, API design, integrations, data synchronization, and asynchronous workflows.',
+      description: 'Built e-commerce, ERP, and CRM solutions with a focus on backend services, API design, integrations, data synchronization, and asynchronous workflows.',
+      highlights: ['Developed e-commerce, ERP, and CRM solutions using Node.js, TypeScript, React, Remix, Shopify APIs, and SQL.', 'Built NetSuite integrations, data synchronization workflows, and order, subscription, warehouse, and fulfillment automation.', 'Created migration pipelines with batching, checkpoints, and recovery, and improved reliability with asynchronous processing and retries.'],
     },
   ],
   education: {
