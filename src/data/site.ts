@@ -3,7 +3,7 @@ export const site = {
   shortName: 'SK',
   role: 'Backend Developer · AI Product Builder',
   location: 'Surat, Gujarat, India',
-  email: 'shashikrkhatri9546@email.com',
+  email: 'shashikrkhatri9546@gmail.com',
   phone: '+91 9546454878',
   intro: 'Building systems that move business forward.',
   bio: 'I’m a backend-focused developer with 2+ years of experience building e-commerce, ERP, and CRM systems. I design APIs, integrations, data pipelines, and asynchronous workflows—and I’m learning AI while building products with AI agents.',
